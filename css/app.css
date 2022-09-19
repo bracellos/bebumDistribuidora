@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Oswald:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    max-width: 1280px;
+    margin:0 auto;
+    padding-bottom: 100px;
+}
+.navPrincipal{
+    width: 100%;
+    height: 113px;
+    background: #000;
+}
+.navPrincipal ul{
+    float: left;
+    margin:0;
+}
+.navPrincipal ul li{
+    display: inline-block;
+    list-style: none;
+}
+.navPrincipal ul li a{
+    color:#F0A952;
+    font-family:'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding:42px 10px;
+}
+.navPrincipal ul li a:hover{
+    background:url('../img/copinho.png') no-repeat center;
+    background-size: 70px;
+}
+.navPrincipal .logoNav{
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+}
+
+
+    /*HOME*/
+
+/* banner*/
+.carousel {
+    text-align: center;
+}
+.carousel li{
+    list-style: none;
+}
+
+/* compoment de destaques*/
+.destaque{
+    position: relative;
+    display: inline-block;
+    width: 340px;
+    height: 390px;
+    background-color: #dedcda;
+    text-align: center;
+            /*tamanho, tipo, cor*/
+    border:1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.8);
+    margin:0 40px;
+}
+.destaque .imagem{
+    width: 100%;
+    height: 200px;
+    background-size: 100%;
+    background-position: center;
+}
+
+.destaque h2{
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    color:#F0A952;
+}
+.destaque .valor{
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    color:red;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.destaque .valor.riscado{
+    font-size: 14px;
+    color:blue;
+    display: block;
+    text-decoration: line-through;
+}
+.destaque .valor small{
+    color:red;
+}
+.destaque .adicionaCarrinho{
+    display: block;
+    position: absolute;
+    width: 320px;
+    padding: 15px 0;
+    background:#F0A952;
+    left:10px;
+    bottom: 10px;
+    color:red;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition:all 0.5s;
+}
+.destaque .adicionaCarrinho:hover{
+    background:red;
+    color:#F0A952;
+    transition:all 0.5s;
+}
+
+
+/*FOOTER*/
+.rodape{
+    width:100%;
+    background: #F0A952;
+    position: fixed;
+    bottom: 0;
+    padding:25px 0;
+}
+.rodape .copy{
+    padding-left: 25px;
+}
+.rodape a{
+    float: right;
+    padding-right: 25px;
+}
+.rodape .copy, .rodape a{
+    font-size: 14px;
+    color:#000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
